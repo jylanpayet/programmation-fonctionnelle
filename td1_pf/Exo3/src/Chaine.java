@@ -14,9 +14,9 @@ public class Chaine implements Sommable<Chaine>, Comparable<Chaine> {
 
     @Override
     public String toString() {
-        return "Chaine[" +
-                "valeur='" + this.valeur + '\'' +
-                ']';
+        return "Chaine{" +
+                "valeur='" + valeur + '\'' +
+                '}';
     }
 
     @Override
