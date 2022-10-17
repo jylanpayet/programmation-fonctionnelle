@@ -1,0 +1,17 @@
+Exercice n°1: 
+
+String::lowercase, Math::max, Math::sin -> fonctionnelle
+List::add, List::size, List::contains -> non fonctionnelle (impur)
+Integer::value of, File::length -> non fonctionnelle (non total)
+
+M1 -> non fonctionnelle
+M2 -> fonctionnelle selon les cas
+M3 ->fonctionnelle selon les cas
+M4 -> fonctionnelle
+M5 -> non déterministe car a pas final
+M6 -> non déterministe car b pas final
+M7 -> fonctionnelle
+M8 -> fonctionnelle selon les cas tant qu'on a pas de méthode pour modifiée b
+M9 -> non déterministe car la division n'est pas total
+M10 -> le float retourne infinity
+M11 -> fonctionnelle
