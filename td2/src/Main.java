@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,5 +24,17 @@ public class Main {
             return Collections.singletonList(listString);
         };
         System.out.println(listToString.convert(l2s));
+
+        HashMap<String, Integer> m2s = new HashMap<>();
+        m2s.put("k1", 1);
+        m2s.put("k2", 2);
+        
+        ToString<HashMap<String, Integer>> mapToString = x -> {
+            final StringBuilder builder = new StringBuilder();
+            x.forEach((key, val) -> { builder.append(String.format("%s : %d, ", key, val)); });
+            return builder.toString();
+        };
+        
+        System.out.println(mapToString.convert(m2s));
     }
 }
