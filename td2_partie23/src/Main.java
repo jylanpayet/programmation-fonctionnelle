@@ -41,7 +41,7 @@ public class Main {
 
 
         System.out.println(filtragePredicatif(p,l));
-
+        System.out.println(accesAutorise.test(test1));
 
     }
 }
